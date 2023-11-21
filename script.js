@@ -1,9 +1,13 @@
+
+// selecting element
 let input = document.querySelector('.input');
 let buttons = document.querySelectorAll('.button');
+ 
+// finishing of load of html
 document.addEventListener("DOMContentLoaded",function() { 
-  buttons.forEach(function(button){
+  buttons.forEach(function(button){                         // adding click for all buttons
     button.addEventListener('click',function() {
-      let buttonInput =button.innerHTML;
+      let buttonInput =button.innerHTML;                    //checking the buttons and executing according to it
       switch (buttonInput){
         case 'C':
           input.value='';
@@ -20,7 +24,7 @@ document.addEventListener("DOMContentLoaded",function() {
           }
           break;
           default:
-          input.value += buttonInput;
+          input.value += buttonInput;                       //for all regular button valuees
           break;
       }
     });
