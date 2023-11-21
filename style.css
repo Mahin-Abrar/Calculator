@@ -76,7 +76,7 @@
   /* Additional CSS to make the calculator look like the image */
   
   .buttons {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
   }
   
