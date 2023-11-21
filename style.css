@@ -1,67 +1,103 @@
 .container{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: auto;
+    display: grid;
+    width: 300px;
+    margin: auto auto;
+    margin-top: 40px;
+    /* justify-content: center;
     align-items:center;
     flex-direction: column;
-    margin: auto;
-    padding:px;
+    margin: auto; */
 }
 body{
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-right: 400px;
     background-color: rgb(33, 187, 187);
 }
 .input{
-    width: 345px;
-    height: 100px;
+    display: flex;
+    /* width: 345px;
+    height: 100px; */
     background-color: rgb(7, 71, 167);
     font-size: 30px;
     color: rgb(209, 209, 209);
     border-color: rgb(7, 71, 167);
+    border-radius: 10px;
+   font-size: 20px;
+   text-align: center;
+   grid-column: span 4;
 }
 .button{
-    width: 80px;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    width: auto;
     padding: 20px;
     margin: 3px 3px;
     border: 1px solid;
-    /* background-color: blueviolet; */
-    /* border-radius: 10%; */
+    border-radius: 5%;
 }
 .operator{
     background-color: rgb(0, 146, 172);
     color: antiquewhite;
     border-color: rgb(0, 146, 172);
 }
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 .final{
+    order: 2;
+    grid-row: span 2;
     background-color: rgb(255, 117, 5);
     color: antiquewhite;
     border-color: rgb(255, 117, 5);
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
 }
 .numbers{
     background-color: rgb(7, 71, 167);
     border-color: rgb(7, 71, 167);
 }
-/* .span-2{
-   align-items:start;
-    width: 170px;
-}
-.row-2{
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    height: 120px;
-}
-.inner-row1{
-    width: 355px;
-    justify-content: center;
-    align-items:center ;
-} */
+
 .new-table{
-    display: flex;
+    display: grid;
+    grid-column: auto;
 
 }
 .new-table2 .button{
+    display: grid   ;
     height: 95%;
 }
-.inner-table3 .span2{
+.inner-table3{
     width: 170px;
+} 
+.number0{
+order: 0;
+}
+.row-2{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+
+.numbers1{
+    order: 1;
+    background-color: rgb(7, 71, 167);
+    border-color: rgb(7, 71, 167);
+}
+
+.numbers2{
+    order: 3;
+    background-color: rgb(7, 71, 167);
+    border-color: rgb(7, 71, 167);
+}
+.zero{
+    grid-column: span 2;
 }
