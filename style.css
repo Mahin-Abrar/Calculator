@@ -5,7 +5,7 @@
     display: grid;
     width: 300px;
     margin: auto auto;
-    margin-top: 40px;
+    margin-top: 20px;
     /* justify-content: center;
     align-items:center;
     flex-direction: column;
@@ -29,6 +29,7 @@ body{
    font-size: 20px;
    text-align: center;
    grid-column: span 4;
+   grid-row: span 2;
 }
 .button{
     grid-column: span 1;
